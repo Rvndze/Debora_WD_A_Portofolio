@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask Me!</title>
+<link rel="icon" type="image/x-icon" href="image/favicon.png">
+<style type="text/css">
+body,td,th {
+	margin: 0;
+    color: #FFFFFF;
+    text-align: left;
+    opacity: 0,5;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-image: url(vecteezy_night-landscape-with-silhouettes-of-mountains-and-sky-with_7120269.jpg);
+    width: auto;
+    height: 100%;
+    background-color: #59387C;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: inherit;
+    background-size: cover;
+}
+* {box-sizing: border-box;}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #DFB7FF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #240F3A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	align-items: center;
+}
+
+input[type=submit]:hover {
+  background-color: #3D1D5F;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #C7A4E2; 
+}
+::-webkit-scrollbar-thumb {
+  background: #59387C; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3D1D5F; 
+}
+.grow img{
+transition: 1s ease;
+}
+
+.grow img:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+	
+.forms {
+  border-radius: 5px;
+  background-color: #DFB7FF;
+  padding: 10px;
+	margin: 20px;
+}
+div.isi {
+	display:flex;
+    justify-content: center;
+	align-items: center;
+	}
+	
+div.form {
+    width: 70%;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+    padding: 40px;
+    background-color: #59387C;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 10px 10px #DFB7FF;
+}
+
+.button {
+	background-color: #8F4396;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: large;
+	margin: 5px 5px;
+	transition-duration: 0.5s;
+	cursor: pointer;	
+	border-radius: 10px;
+}
+.button1 {
+	background-color: #42295C;
+	color: white;
+	}
+	
+.button1:hover {
+	background-color: #D3CDFB;
+	color: #240F3A;
+	}
+div.contact {
+    width: 70%;
+    padding-top: 25px;
+	padding-bottom: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+	background-color: #42295C;
+	border-radius: 10px;
+	box-shadow: 10px 10px #DFB7FF;
+}
+div.vote {
+	width: 70%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+	background-color: #6D4398;
+	border-radius: 10px;
+	box-shadow: 10px 10px #DFB7FF;
+	}	
+
+	div.topnav {
+		background-color: #240F3A;
+		overflow: hidden;
+		position: sticky;
+		margin: 0;
+	padding-right: 10px;
+		z-index: 999;
+		border: 0;
+	}
+	div.topnav a {
+		float: right;
+		width: 132px;
+		color: white;
+		text-align: center;
+		padding: 20px 16px;
+		text-decoration: none;
+		font-size: 16px;
+		transition-duration: 0.4s
+	}
+	div.topnav a:hover {
+		background-color: #59387C;
+		color: white;
+		transition-duration: 0.4s;
+	}
+	.topnav a:active {
+		background-color: #6A4D9C;
+		color: white;
+	}
+	.active {
+		background-color: #6A4D9C;
+	}
+	img.logo {
+		display: inline-block;
+		vertical-align: middle;
+		float: left;
+		margin: 4px;
+		position: relative;
+		top: 50%;
+		left: 10px;
+	}
+
+
+	div.footer {
+	position: absolute;
+	background-color: #240F3A;
+	display: block;
+	padding: 15px;
+	align-content: center;
+	right: 0;
+	left: 0;
+}
+	div.capt {
+    display: block;
+    left: 50%;
+    margin-top: 5px;
+    text-align: center;
+	}
+	div.socmed {
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+	}
+	.smed {
+		margin: 0px 11px;
+		position: relative;
+	}
+@media screen and (max-width: 700px) {
+  .topnav a {
+    display: block;
+	  width: 100%;
+  }
+}
+
+	
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    text-decoration: none;
+    color: #F2C6EB;
+}
+a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+a {
+    font-weight: normal;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+ 	<img class="logo" src="icon draft.png" width="50" alt=""/>
+	<a class="active" href="#">ASK ME!</a>
+	<a href="portofolio-id.html">PORTOFOLIO</a>
+	<a href="profile-id.html">PROFILE</a>
+	<a href="home-id.html">HOME</a>
+</div>
+
+<div class="vote">
+  <h1 style="color: #D3CDFB">Suka desain web saya? Bantu saya dengan <span style="color: #FFFFFF">vote</span> dan <span style="color: #FFFFFF">rate</span> website saya  disini!</h1>
+	<p><strong>*Note:</strong> Vote website nomor 6 ya :)</p>
+
+<div class="isi">
+	<a href="https://sites.google.com/likmi.ac.id/uaswd#h.ej0j1ogskbc1" target="new">
+
+		<button class= "button button1"><strong>Vote Here!</strong></button>
+
+	</a>
+ </div>
+</div>
+	
+ <div class="contact">
+   <h1 style="text-align: center; font-size: xx-large;">Ingin Tahu Lebih Lanjut? Hubungi Saya!</h1>
+	<table width="80%" border="0" align="center">
+	  <tbody>
+	    <tr>
+	      <td width="31%" style="text-align: center"><img src="viber.png" width="40" height="40" alt=""/></td>
+	      <td width="43%" style="text-align: center"><img src="email (1).png" width="50" height="50" alt=""/></td>
+	      <td width="26%" style="text-align: center"><img src="line.png" width="50" height="50" alt=""/></td>
+        </tr>
+	    <tr>
+	      <td style="text-align: center">Phone Number</td>
+	      <td style="text-align: center">E-mail</td>
+	      <td style="text-align: center">Line ID</td>
+        </tr>
+	    <tr>
+	      <td style="text-align: center">+62 857 2187 9948</td>
+	      <td style="text-align: center">debliciella@gmail.com</td>
+	      <td style="text-align: center">9786754213</td>
+        </tr>
+      </tbody>
+   </table>
+ </div>
+
+<div class="form">
+  <form>
+            <h2>Berikan Pendapatmu!</h2>
+            <label for="nama">Nama</label>
+            <input name="nama" type="text" required="required" id="nama" placeholder="Masukkan Nama">
+            
+            <label for="email">E-mail</label>
+            <input name="email" type="email" required="required" id="email" placeholder="Masukkan E-mail">
+            
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" required="required" id="pesan" style="height:200px" placeholder="Ada yang ingin disampaikan?"></textarea>
+            
+            <input type="submit" value="Submit">
+     </form>
+</div>
+<div class="grow footer">
+	<div class="capt">
+	<strong style="font-size: 20px; text-align: center;">&#9885; Follow My Social Media Bellow &#9885;</strong>
+	</div>
+	
+	<div class="socmed"><img class="smed" src="yt logo plain.png" alt="" height="60"/><img class="smed" src="pngwing.com (7).png" alt="" height="60"/>
+	<img class="smed" src="pngwing.com (4).png" alt="" height="60"/>
+	</div>	
+</div>
+</body>
+</html>
